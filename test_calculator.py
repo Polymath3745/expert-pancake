@@ -15,4 +15,4 @@ def test_zero():
 def test_str():
         with pytest.raises(TypeError):
                 square("cat")
-        
+        # left off on video at 6:47:24
