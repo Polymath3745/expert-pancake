@@ -3,7 +3,7 @@ def main():
     print("x squared is ", square(x))
 
 def square(n):
-    return n + n 
+    return n * n 
 
 # this is so when I import this file in another, the main function
 # of this file will not run as well.
