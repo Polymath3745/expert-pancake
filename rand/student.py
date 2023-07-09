@@ -1,7 +1,9 @@
 class Student:
     def __init__(self, name, house):
         if not name:
-            raise ValueError
+            raise ValueError("Missing name")
+        if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
+            raise ValueError("Invalid house")
         self.m_name = name
         self.m_house = house
 
@@ -15,8 +17,8 @@ def get_student():
     house = input("House: ")
     try:
         return Student(name, house)
-    except ValueError:
-        ...
+    except AttributeError:
+        print("Invalid")
 
 if __name__ == '__main__':
     main()
