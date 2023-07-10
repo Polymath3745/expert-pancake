@@ -1,3 +1,4 @@
+# easy
 def count_occurences(nums, target):
     cnt = 0
     # only have to use range(len()) if it were
@@ -7,24 +8,28 @@ def count_occurences(nums, target):
             cnt += 1
     return cnt
 
+# medium
 def remove_duplicates(nums):
     for i in range(len(nums)-1, 0, -1):
         if nums[i] == nums[i-1]:
             nums.remove(nums[i])
     return nums
 
+# medium
 def move_zeros(nums):
     for i in range(len(nums) - 1, 0, -1):
         if nums[i] == 0:
             nums.remove(nums[i])
             nums.append(0)
 
+# easy
 def reverse_list(nums):
     reverse = []
     for i in range(len(nums)-1, -1, -1):
         reverse.append(nums[i])
     return reverse
 
+# medium
 def find_max_product(nums):
     max_prod = 0
     for i in range(len(nums)):
@@ -35,6 +40,7 @@ def find_max_product(nums):
                     max_prod = prod
     return max_prod
 
+# easy
 def find_max_element(nums):
     max = 0
     for num in range(len(nums)):    
@@ -45,9 +51,6 @@ def find_max_element(nums):
 
 def main():
     nums = [1, 2, 0, 3 ,3, 0, 4, 5, 0, 5]
-    #move_zeros(nums)
-    #result = remove_duplicates(nums)
-    print(reverse_list(nums))
 
 
 if __name__ == '__main__':
