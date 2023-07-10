@@ -29,7 +29,7 @@ def reverse_list(nums):
         reverse.append(nums[i])
     return reverse
 
-# medium
+# hard
 def find_max_product(nums):
     max_prod = 0
     for i in range(len(nums)):
